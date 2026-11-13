@@ -1,0 +1,18 @@
+cat << 'EOF' > .gitignore
+# Ambiente Virtual
+venv/
+.venv/
+
+# Segredos e Configurações
+.env
+*.env
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Dados do Lakehouse (Proteção contra vazamento de dados reais)
+data/
+EOF
+
+logs/
